@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d40136d4-985a-4932-9f82-21027d985045" name="Default Changelist" comment="" />
+    <list default="true" id="d40136d4-985a-4932-9f82-21027d985045" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MobileMentor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MobileMentor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Places/Shop.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Places/Shop.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Shop/Phones/PhoneShop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Shop/Phones/PhoneShop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/PhoneDatabase.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PhoneDatabase.asset" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,14 +50,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shop/Phones/PhoneShop.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+            <state relative-caret-position="360">
+              <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
               <folding>
-                <marker date="1555771426903" expanded="false" signature="6:78" ph="..." />
-                <marker date="1555771426903" expanded="true" signature="118:157" ph="{...}" />
+                <marker date="1555773549969" expanded="false" signature="6:100" ph="..." />
+                <marker date="1555773549969" expanded="true" signature="140:1340" ph="{...}" />
+                <marker date="1555773549969" expanded="true" signature="362:728" ph="{...}" />
+                <marker date="1555773549969" expanded="true" signature="405:722" ph="{...}" />
+                <marker date="1555773549969" expanded="true" signature="510:568" ph="{...}" />
+                <marker date="1555773549969" expanded="true" signature="591:674" ph="{...}" />
+                <marker date="1555773549969" expanded="true" signature="773:825" ph="{...}" />
+                <marker date="1555773549969" expanded="true" signature="855:960" ph="{...}" />
+                <marker date="1555773549969" expanded="true" signature="984:1016" ph="{...}" />
+                <marker date="1555773549969" expanded="true" signature="1040:1071" ph="{...}" />
+                <marker date="1555773549969" expanded="true" signature="1103:1338" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -70,7 +84,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shop/Phones/Phone.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="48">
@@ -127,8 +141,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlacesManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shop/BaseShopItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Phones/PhoneDatabase.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Phones/PhoneShop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Phones/Phone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Shop/Phones/PhoneShop.cs" />
       </list>
     </option>
   </component>
@@ -242,12 +256,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555765759116</updated>
-      <workItem from="1555765765694" duration="3096000" />
+      <workItem from="1555765765694" duration="3907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3096000" />
+    <option name="totallyTimeSpent" value="3907000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -382,17 +396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shop/Phones/PhoneShop.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding>
-            <marker date="1555771426903" expanded="false" signature="6:78" ph="..." />
-            <marker date="1555771426903" expanded="true" signature="118:157" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shop/Phones/PhoneDatabase.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -410,6 +413,26 @@
           <folding>
             <marker date="1555771479508" expanded="true" signature="6:32" ph="..." />
             <marker date="1555771479508" expanded="true" signature="82:113" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Shop/Phones/PhoneShop.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <folding>
+            <marker date="1555773549969" expanded="false" signature="6:100" ph="..." />
+            <marker date="1555773549969" expanded="true" signature="140:1340" ph="{...}" />
+            <marker date="1555773549969" expanded="true" signature="362:728" ph="{...}" />
+            <marker date="1555773549969" expanded="true" signature="405:722" ph="{...}" />
+            <marker date="1555773549969" expanded="true" signature="510:568" ph="{...}" />
+            <marker date="1555773549969" expanded="true" signature="591:674" ph="{...}" />
+            <marker date="1555773549969" expanded="true" signature="773:825" ph="{...}" />
+            <marker date="1555773549969" expanded="true" signature="855:960" ph="{...}" />
+            <marker date="1555773549969" expanded="true" signature="984:1016" ph="{...}" />
+            <marker date="1555773549969" expanded="true" signature="1040:1071" ph="{...}" />
+            <marker date="1555773549969" expanded="true" signature="1103:1338" ph="{...}" />
           </folding>
         </state>
       </provider>

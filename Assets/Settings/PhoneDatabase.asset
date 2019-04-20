@@ -13,5 +13,9 @@ MonoBehaviour:
   m_Name: PhoneDatabase
   m_EditorClassIdentifier: 
   Phones:
-  - Price: 0
-    Picture: {fileID: 0}
+  - Price: 1000
+    Picture: {fileID: 21300000, guid: 3eabf762e73e34e08b7559c246206359, type: 3}
+  - Price: 1200
+    Picture: {fileID: 21300000, guid: 486461ef6002d40ada9ec1d93127372d, type: 3}
+  - Price: 1400
+    Picture: {fileID: 21300000, guid: c304eda3747644fc19bd1501d11f4099, type: 3}
