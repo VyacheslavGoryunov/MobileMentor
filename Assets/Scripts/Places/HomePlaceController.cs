@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -10,6 +11,8 @@ public class HomePlaceController : MonoBehaviour
 
     public Button Map;
     public int GreetRoomDelay = 2;
+
+    public static EventHandler ShowShopTip = (sender, args) => { };
 
     void Start()
     {
@@ -46,10 +49,11 @@ public class HomePlaceController : MonoBehaviour
         Map.onClick.AddListener(OnMapClicked);
         MentorUI.Message(Texts.MapTip, Map, null, TextAnchor.LowerLeft, true);
     }
-
+    
     private void OnMapClicked()
     {
         MentorUI.HideAll();
         Map.onClick.RemoveListener(OnMapClicked);
+        MentorShopTipTrigger.ShowShopTip();
     }
 }
