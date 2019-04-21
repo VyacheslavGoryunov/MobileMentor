@@ -42,12 +42,12 @@ public class MemoryGame : MonoBehaviour
 
                 for (int i = 0; i < numbers.Length; i++)
                 {
-                    var buttonGameObject = _buttonsDictionary[numbers[i]].gameObject;
-                    var tweenColor = buttonGameObject.AddComponent<uTweenColor>();
-                    tweenColor.@to = Color.yellow;
-                    tweenColor.loopStyle = LoopStyle.Once;
-                    tweenColor.onFinished = new UnityEvent();
-                    tweenColor.onFinished.AddListener(() => { });
+//                    var buttonGameObject = _buttonsDictionary[numbers[i]].gameObject;
+//                    var tweenColor = buttonGameObject.AddComponent<uTweenColor>();
+//                    tweenColor.@to = Color.yellow;
+//                    tweenColor.loopStyle = LoopStyle.Once;
+//                    tweenColor.onFinished = new UnityEvent();
+//                    tweenColor.onFinished.AddListener(() => { });
                 }
 
                 break;
