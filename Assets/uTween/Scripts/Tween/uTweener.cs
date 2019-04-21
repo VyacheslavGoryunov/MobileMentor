@@ -138,6 +138,15 @@ namespace uTools {
 			mFactor = 0f;
 		}
 
+		public void PartedReset()
+		{
+			enabled = true;
+			mAmountPerDelta = 1000f;
+			mDuration = 0f;
+			mStartTime = -1f;
+			mFactor = 0f;
+		}
+
 		/// <summary>
 		/// Begin the specified _go and _duration.
 		/// </summary>

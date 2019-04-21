@@ -55,5 +55,11 @@ namespace uTools {
 		[ContextMenu("Assume value of 'To'")]
 		public override void SetCurrentValueToEnd () { value = to; }
 
+		public void Swap()
+		{
+			var temp = to;
+			to = from;
+			from = temp;
+		}
 	}
 }
