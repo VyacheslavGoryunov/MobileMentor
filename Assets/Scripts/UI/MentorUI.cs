@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class MentorUI : MonoBehaviour
@@ -16,15 +17,15 @@ public class MentorUI : MonoBehaviour
     public Button ContinueButton;
 
     private Transform _highlightedParent;
-    private Graphic _currentHighlighted;
+    private UIBehaviour _currentHighlighted;
 
     void Awake()
     {
         _instance = this;
     }
     
-    public void ShowMessage(string message, Graphic highlightedElement = null, UnityAction callback = null,
-        TextAnchor alignment = TextAnchor.UpperLeft)
+    public void ShowMessage(string message, UIBehaviour highlightedElement = null, UnityAction callback = null,
+        TextAnchor alignment = TextAnchor.UpperLeft, bool hideContinue = false)
     {
         UiParent.gameObject.SetActive(true);
         //TODO: add overlaying
@@ -50,6 +51,7 @@ public class MentorUI : MonoBehaviour
                 Hide();
             }
         });
+        ContinueButton.gameObject.SetActive(!hideContinue);
     }
 
     public void Hide()
@@ -68,15 +70,21 @@ public class MentorUI : MonoBehaviour
         }
     }
 
-    public void Highlight(Graphic target)
+    public void Highlight(UIBehaviour target)
     {
-        _highlightedParent = target.transform;
+        _currentHighlighted = target;
+        _highlightedParent = target.transform.parent;
         target.transform.SetParent(Overlay);
     }
 
-    public static void Message(string message, Graphic highlightedElement = null, UnityAction callback = null,
-        TextAnchor alignment = TextAnchor.UpperLeft)
+    public static void Message(string message, UIBehaviour highlightedElement = null, UnityAction callback = null,
+        TextAnchor alignment = TextAnchor.UpperLeft, bool hideContinue = false)
     {
-        Instance.ShowMessage(message, highlightedElement, callback, alignment);
+        Instance.ShowMessage(message, highlightedElement, callback, alignment, hideContinue);
+    }
+
+    public static void HideAll()
+    {
+        Instance.Hide();
     }
 }
