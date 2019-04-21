@@ -9,6 +9,7 @@ public class Texts : MonoBehaviour
     public static string GreetingComplete => Instance.GetContent("GreetingComplete");
     public static string RoomGreeting => Instance.GetContent("RoomGreeting");
     public static string MapTip => Instance.GetContent("MapTip");
+    public static string PhoneBuy => Instance.GetContent("PhoneBuy");
     
     public static Texts Instance => _instance;
     private static Texts _instance;

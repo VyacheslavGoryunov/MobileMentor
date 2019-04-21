@@ -20,9 +20,9 @@ public class ChatManager : MonoBehaviour
     private void Start()
     {
         AddMessage("Макс Дорофеев", "Привет, это пробное сообщение!");
-        AddMessage("Вася Пупник", "Привет, это второе пробное сообщение!");
+        AddMessage("Вася Пупкин", "Привет, это второе пробное сообщение!");
     }
-
+    
     public void AddMessage(string senderName, string content)
     {
         var newMessage = Instantiate(MessagePrefab, ChatBox.transform);
