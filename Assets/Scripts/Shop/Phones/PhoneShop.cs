@@ -12,6 +12,7 @@ public class PhoneShop : MonoBehaviour
     public Button RightButton;
     public Button BuyButton;
     public string PriceFormat = "{0} points";
+    public Text[] Specifications;
 
     public int Current
     {
@@ -43,8 +44,8 @@ public class PhoneShop : MonoBehaviour
 
     protected void BindAll()
     {
-        LeftButton.onClick.AddListener(Next);
-        RightButton.onClick.AddListener(Back);
+        LeftButton.onClick.AddListener(Back);
+        RightButton.onClick.AddListener(Next);
         BuyButton.onClick.AddListener(Buy);
     }
 
@@ -80,5 +81,11 @@ public class PhoneShop : MonoBehaviour
 
         Preview.sprite = phone.Picture;
         PriceLabel.text = string.Format(PriceFormat, phone.Price);
+
+        for (int i = 0; i < Specifications.Length; i++)
+        {
+            if (i > Specifications.Length && i > phone.Specifications.Length) return;
+            Specifications[i].text = phone.Specifications[i];
+        }
     }
 }

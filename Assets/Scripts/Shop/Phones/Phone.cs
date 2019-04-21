@@ -5,4 +5,5 @@ using UnityEngine;
 public class Phone : BaseShopItem
 {
     public Sprite Picture;
+    public string[] Specifications;
 }

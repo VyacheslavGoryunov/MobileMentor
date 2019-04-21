@@ -13,9 +13,21 @@ MonoBehaviour:
   m_Name: PhoneDatabase
   m_EditorClassIdentifier: 
   Phones:
-  - Price: 1000
+  - Price: 2000
     Picture: {fileID: 21300000, guid: 3eabf762e73e34e08b7559c246206359, type: 3}
-  - Price: 1200
+    Specifications:
+    - "32 \u0433\u0431"
+    - "5 \u0434\u044E\u0439\u043C\u043E\u0432"
+    - "12 \u041C\u041F"
+  - Price: 1500
     Picture: {fileID: 21300000, guid: 486461ef6002d40ada9ec1d93127372d, type: 3}
-  - Price: 1400
+    Specifications:
+    - "16 \u0413\u0411"
+    - "6 \u0434\u044E\u0439\u043C\u043E\u0432"
+    - "\u041A\u0430\u043C\u0435\u0440\u0430 8 \u041C\u041F"
+  - Price: 2500
     Picture: {fileID: 21300000, guid: c304eda3747644fc19bd1501d11f4099, type: 3}
+    Specifications:
+    - "64 \u0413\u0411"
+    - "4,5 \u0434\u044E\u0439\u043C\u0430"
+    - "\u041A\u0430\u043C\u0435\u0440\u0430 12 \u041C\u041F"
