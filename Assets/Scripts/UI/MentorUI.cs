@@ -34,7 +34,8 @@ public class MentorUI : MonoBehaviour
         //TODO: add overlaying
         //TODO: add animation
         MessageLabel.alignment = alignment;
-
+        
+        StopAllCoroutines();
         StartCoroutine(WriteEffectText(message));
 
         if (highlightedElement)
