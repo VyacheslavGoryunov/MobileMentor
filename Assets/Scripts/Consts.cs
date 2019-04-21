@@ -1,7 +1,4 @@
-namespace DefaultNamespace
+public class Consts
 {
-    public class Consts
-    {
-        
-    }
+    public const string UserKey = "user";
 }

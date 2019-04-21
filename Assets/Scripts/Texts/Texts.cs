@@ -1,10 +1,14 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Texts : MonoBehaviour
 {
     public static string WelcomeMessage => Instance.GetContent("WelcomeMessage");
     public static string MentorName => Instance.GetContent("MentorName");
+    public static string GreetingComplete => Instance.GetContent("GreetingComplete");
+    public static string RoomGreeting => Instance.GetContent("RoomGreeting");
+    public static string MapTip => Instance.GetContent("MapTip");
     
     public static Texts Instance => _instance;
     private static Texts _instance;
@@ -27,7 +31,12 @@ public class Texts : MonoBehaviour
             
             //TODO: refactor it
             result = result?.Replace("{" + s + "}", GetContent(s));
-
+        }
+        
+        //todo: and it...
+        if (User.Current != null)
+        {
+            result = result?.Replace("{Username}", User.Current.Name);
         }
 
         return result;
