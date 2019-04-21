@@ -858,9 +858,6 @@ MonoBehaviour:
   - TransitionButton: {fileID: 322989127}
     Prefab: {fileID: 9012419354325622127, guid: 06cbec27d5d904d01807dc7893b5ee65,
       type: 3}
-  - TransitionButton: {fileID: 276123458}
-    Prefab: {fileID: 5716750437374888880, guid: 07a7dd91792be4f3d847b64264b49ad1,
-      type: 3}
   - TransitionButton: {fileID: 1932272305}
     Prefab: {fileID: 5716750437374888880, guid: 754bb6f9a5aa449dda9f8dc182abde17,
       type: 3}
