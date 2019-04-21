@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using uTools;
 
 public class MentorUI : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class MentorUI : MonoBehaviour
     public Text MessageLabel;
     public Button ContinueButton;
 
+    public int TextEffectSpeed = 40;
+
     private Transform _highlightedParent;
     private UIBehaviour _currentHighlighted;
 
@@ -23,7 +26,7 @@ public class MentorUI : MonoBehaviour
     {
         _instance = this;
     }
-    
+
     public void ShowMessage(string message, UIBehaviour highlightedElement = null, UnityAction callback = null,
         TextAnchor alignment = TextAnchor.UpperLeft, bool hideContinue = false)
     {
@@ -31,7 +34,8 @@ public class MentorUI : MonoBehaviour
         //TODO: add overlaying
         //TODO: add animation
         MessageLabel.alignment = alignment;
-        MessageLabel.text = message;
+
+        StartCoroutine(WriteEffectText(message));
 
         if (highlightedElement)
         {
@@ -52,6 +56,17 @@ public class MentorUI : MonoBehaviour
             }
         });
         ContinueButton.gameObject.SetActive(!hideContinue);
+    }
+
+    private IEnumerator WriteEffectText(string message)
+    {
+        MessageLabel.text = string.Empty;
+
+        foreach (var c in message)
+        {
+            MessageLabel.text += c;
+            yield return new WaitForSeconds(1f / TextEffectSpeed);
+        }
     }
 
     public void Hide()
